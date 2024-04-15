@@ -5,6 +5,7 @@ Preprocessing methods for vibrational spectroscopy (specifically Raman spectrosc
 A preprocessing algorithm called nonnegatively constrained classical least squares (NCCLS) is introduced. Additional methods included are principal component analysis (PCA), spectra residual augmented classical least squares (SRACLS), a convolutional denoising autoencoder (CDAE), a blind source separation method utilizing principal component analysis for initial feature identification (BSS-PCA), and a blind source separation method utilizing independent component analysis for initial feature identification (BSS-ICA). 
 
 •	Methods Folder: A folder containing the removal methods functions for application to other systems and a simple test scenario script.
+
 o	Creation_Functions.py: Includes functions to create Gaussian peaks that resemble vibrational spectra and to create a dataset following a non-centered Latin Hypercube Sampling scheme.
 o	Removal_Functions.py: Includes functions for removing unknown species from mixture spectra. Inputs for the functions include spectral data (possibly requiring concentration information), reference spectra of known species, and the data that is to be preprocessed. Spectra data is expected in the form of a 2D numpy array with different samples across the rows and different wavenumbers across the columns.
 o	Removal_Verification.py: A test script demonstrating the removal functions in the Removal_Functions.py file.
